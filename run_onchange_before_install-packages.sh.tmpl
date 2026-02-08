@@ -1,0 +1,15 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+brew bundle --file=/dev/stdin <<EOF
+
+brew "direnv"
+brew "fx"
+
+cask "nikitabobko/tap/aerospace"
+cask "font-fira-code"
+cask "raycast"
+cask "visual-studio-code"
+
+EOF
+{{ end -}}
