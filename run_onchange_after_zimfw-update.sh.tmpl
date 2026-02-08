@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+# dot_zimrc hash: {{ include "private_dot_zimrc" | sha256sum }}
+
+source .zshrc
+zimfw install -q
+zimfw uninstall -q
+
