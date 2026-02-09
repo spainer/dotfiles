@@ -7,10 +7,10 @@ export COLOR=0x40ffffff
 export BORDER_COLOR=0x30ffffff
 export BORDER_WIDTH=2
 export HEIGHT=30
-export RADIUS=20
+export RADIUS=10
 
 config=(
-  height=40
+  height=30
   position=top
   color=0x00000000
   y_offset=0

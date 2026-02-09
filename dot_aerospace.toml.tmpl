@@ -9,7 +9,7 @@ config-version = 2
 
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+after-startup-command = ['exec-and-forget sketchybar']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -79,7 +79,7 @@ on-mode-changed = []
     inner.vertical =   5
     outer.left =       5
     outer.bottom =     5
-    outer.top =        50
+    outer.top =        [{ monitor."built-in" = 5 }, 35]
     outer.right =      5
 
 # 'main' binding mode declaration
@@ -200,3 +200,4 @@ on-mode-changed = []
     alt-shift-down = ['join-with down', 'mode main']
     alt-shift-up = ['join-with up', 'mode main']
     alt-shift-right = ['join-with right', 'mode main']
+

@@ -3,8 +3,8 @@
 export COLOR=0x40ffffff
 export BORDER_COLOR=0x30ffffff
 export BORDER_WIDTH=2
-export HEIGHT=30
-export RADIUS=20
+export HEIGHT=20
+export RADIUS=10
 
 PREVIOUS=($(sketchybar --query bar | jq -r '.items[] | select(test("^ws\\."))'))
 
