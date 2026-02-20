@@ -9,6 +9,8 @@ window-padding-x = 5
 window-padding-y = 5,0
 
 initial-command = zsh -c 'tmux new -As default'
+command = zsh -c 'tmux new'
+
 confirm-close-surface = false
 quit-after-last-window-closed = true
 
